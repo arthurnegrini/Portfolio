@@ -1,0 +1,618 @@
+
+:root {
+  --text-color: #1a1c20;
+  --link-color: #095c26;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+}
+
+nav .right a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Ajuste la marge selon tes besoins */
+}
+
+nav .right img.flag {
+  margin-left: 10px; /* Ajuste la marge selon tes besoins */
+  width: 30px; /* Taille des drapeaux */
+  height: auto;
+  cursor: pointer;
+}
+
+
+/* SECTION 1: Hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .text h2 {
+  font-size: 45px;
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* SECTION 2: A propos */
+
+.propos-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.propos-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.propos-section h3 {
+  text-align: center;  /* Centre le texte horizontalement */
+  font-size: 20px;     /* Taille de la police */
+  margin: 0;           /* Enlève les marges par défaut, ajustez si nécessaire */
+  padding-bottom: 50px;
+  padding : 8px 
+}
+
+
+.propos-section h4 {
+  text-align: center;  /* Centre le texte horizontalement */
+  font-size: 20px;     /* Taille de la police */
+  margin: 0; 
+  padding-bottom: 50px;
+  padding : 8px
+}
+
+.propos-section h5 {
+  text-align: center;  /* Centre le texte horizontalement */
+  font-size: 20px;     /* Taille de la police */
+  margin: 0; 
+  padding-bottom: 50px;
+  padding : 8px
+}
+
+
+.propos-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.propos-section .buttons {
+  text-align: center;
+  margin: 20px 467px; /* Ajuster la marge selon vos besoins */
+  display: inline-flex; /* Utilisation de flex pour aligner les boutons */
+  align-items: center;
+}
+
+.propos-section button {
+  padding: 15px 25px;
+  cursor: pointer;
+  border: 2px solid black; /* Contour noir */
+  background-color: white; /* Fond blanc */
+  color: black; /* Texte noir */
+  border-radius: 25px 0 0 25px; /* Arrondi seulement à gauche */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Animation de la couleur */
+}
+
+.propos-section button + button {
+  border-radius: 0 25px 25px 0; /* Arrondi seulement à droite */
+  margin-left: -2px; /* Superposer les bords arrondis */
+}
+
+.propos-section .buttons::after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: black; /* Trait noir entre les boutons */
+  display: block;
+  margin-left: -2px; /* Superposer le trait au bord des boutons */
+}
+
+.propos-section .active {
+  background-color: #004d00; /* Vert forêt pour le bouton actif */
+  color: white; /* Texte blanc pour le bouton actif */
+}
+
+.propos-section button:focus {
+  outline: none; /* Enlever le contour par défaut */
+}
+
+.propos-section .content-section {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre de passer à la ligne suivante */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.propos-section .square {
+  position: relative; /* Nécessaire pour les pseudo-éléments */
+  flex: 1 1 calc(45% - 20px); /* Ajuster pour réduire la largeur des carrés */
+  max-width: calc(45% - 20px); /* Assurer que les éléments ne dépassent pas 45% de la largeur */
+  box-sizing: border-box;
+  height: 250px; /* Hauteur des carrés augmentée */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.propos-section .square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Coins arrondis pour l'image */
+}
+
+.propos-section .square::before {
+  content: attr(data-text); /* Utilisation de data-text pour le texte du voile */
+  position: absolute;
+  top: -100%; /* Déplace le voile depuis le haut */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.747);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  transition: top 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1; /* S'assure que le voile est au-dessus de l'image */
+}
+
+.propos-section .square:hover::before {
+  top: 0; /* Affiche le voile au survol */
+}
+
+#interetsContent {
+  display: flex; /* Utilise flexbox pour aligner les bulles en ligne */
+  flex-wrap: nowrap; /* Empêche le passage à la ligne suivante */
+  justify-content: center; /* Centre les bulles */
+  gap: 50px; /* Ajoute un espace de 20px entre chaque bulle */
+}
+.circular {
+  width: 300px; /* Ajustez la taille selon vos besoins */
+  height: 300px; /* Ajustez la taille selon vos besoins */
+  border-radius: 50%; /* Rend le conteneur circulaire */
+  overflow: hidden; /* Cache tout ce qui dépasse le conteneur */
+  display: flex; /* Centrer l'image */
+  align-items: center; /* Centrer l'image verticalement */
+  justify-content: center; /* Centrer l'image horizontalement */
+  position: relative; /* Nécessaire pour les pseudo-éléments */
+  
+}
+
+/* INTERETS */
+
+.circular img {
+  width: 170%;
+  height: auto;
+  object-fit: cover;
+}
+
+.circular::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%; /* Faire descendre le voile depuis le haut */
+  transition: top 0.1s ease-in-out; /* Transition pour le voile */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.747);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
+  transition: top 0.3s ease-in-out; /* Transition pour le voile */
+  border-radius: 20%; /* Coins arrondis pour le voile */
+  padding: 20px; /* Ajout d'espace pour le texte */
+  box-sizing: border-box;
+}
+
+.circular:hover::before {
+  top: 0; /* Faire apparaître le voile */
+}
+
+
+
+/* SECTION 3: Projets */
+.projets-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #eeeff1; /* Couleur de fond de la section Projets */
+}
+
+.projets-section h2 {
+  font-size: 36px; /* Augmente la taille de la police pour le titre */
+  margin-bottom: 20px; /* Ajoute un espace entre le titre et le reste du contenu */
+}
+
+.projets-section h5 {
+  font-size: 18px; /* Augmente la taille de la police pour la phrase */
+  margin-bottom: 20px; /* Ajoute un espace entre la phrase et le reste du contenu */
+  font-weight: normal; /* Définit le poids de la police à normal pour enlever le gras */
+}
+
+.carousel {
+  position: relative;
+  margin: auto;
+  max-width: 50%; /* Limite la largeur maximale du carrousel */
+  overflow: hidden; /* Cache les éléments débordants */
+}
+
+.carousel-item {
+  display: none; /* Cache tous les éléments du carrousel par défaut */
+  position: relative;
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block; /* Affiche uniquement l'élément actif */
+}
+
+.description {
+  /* Fond semi-transparent pour le texte de description */
+  color: #004d00;
+  padding: 20px;
+  margin-top: 5px; /* Espace entre l'image et la description */
+  border-radius: 10px; /* Arrondit les coins de la description */
+}
+
+
+
+/* Extend the text horizontally */
+.carousel {
+  width: 70vw; /* Utilisez toute la largeur de la fenêtre */
+  max-width: 100%; /* Assurez-vous qu'il n'y a pas de restriction de largeur */
+  overflow: visible; /* Permet au contenu de déborder si nécessaire */
+}
+
+.carousel-item .description {
+  width: 100vw; /* Utilisez toute la largeur de la fenêtre */
+  max-width: 80%; /* Enlevez toute restriction de largeur maximale */
+  margin: 20px auto; /* Centre la description horizontalement */
+  font-size: 15px; /* Augmentez la taille de la police */
+  text-align: center; /* Justifie le texte pour une meilleure présentation */
+  line-height: 1.6; /* Augmente l'interligne pour améliorer la lisibilité */
+  padding: 0px; /* Ajoute du padding pour aérer le texte */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Assurez-vous que le conteneur parent a une position relative */
+.carousel {
+  position: relative;
+}
+
+/* Styles pour les flèches de navigation */
+.prev, .next {
+  cursor: pointer; /* Change le curseur au survol */
+  position: absolute; /* Positionne les flèches de manière absolue par rapport au conteneur parent */
+  top: 50%; /* Centre verticalement les flèches */
+  transform: translateY(100%); /* Centre les flèches verticalement */
+  padding: 16px; /* Espace interne des flèches */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease; /* Transition pour l'effet de survol */
+  border-radius: 3px; /* Arrondit les coins des flèches */
+  user-select: none; /* Empêche la sélection du texte */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour les flèches */
+  z-index: 1; /* S'assure que les flèches sont au-dessus des autres éléments */
+}
+
+.prev {
+  left: 50px; /* Positionne la flèche de gauche à 50px du bord gauche */
+}
+
+.next {
+  right: 50px; /* Positionne la flèche de droite à 50px du bord droit */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Change la couleur de fond au survol */
+}
+
+
+
+
+
+
+/* Styles spécifiques pour chaque image */
+.img1 {
+  width: 20%; /* Ajustez la largeur selon vos besoins */
+  height: 150px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover; /* Ajustez pour que l'image remplisse le conteneur sans déformation */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+.img2 {
+  width: 20%; /* Ajustez la largeur selon vos besoins */
+  height: 150px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover; /* Ajustez pour que l'image remplisse le conteneur sans déformation */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+.img3 {
+  width: 16.8%; /* Ajustez la largeur selon vos besoins */
+  /*height: 0px ; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover; /* Ajustez pour que l'image remplisse le conteneur sans déformation */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+.img4 {
+  width: 20%; /* Ajustez la largeur selon vos besoins */
+  height: 150px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: cover; /* Ajustez pour que l'image remplisse le conteneur sans déformation */
+  border-radius: 10px; /* Arrondit les coins de l'image */
+}
+
+    
+/* SECTION 4: Compétences */
+.competences-section {
+  padding: 0 500px;
+  margin-bottom: 200px;
+}
+.competences-section h2 {
+  text-align: center;
+  font-size: 2em; /* Ajustez la taille de la police selon vos besoins */
+  margin: 20px 0; /* Ajustez les marges selon vos besoins */
+}
+
+
+.competences-section .text {
+  margin-bottom: 60px;
+}
+
+.competences-section .group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espace entre les lignes */
+}
+
+.competences-section .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espace entre les cellules */
+}
+
+.competences-section .cell img {
+  width: 100px; /* Ajustez cette valeur selon vos besoins */
+  height: auto; /* Cela maintiendra le ratio d'aspect de l'image */
+}
+
+    
+    /* SECTION 4: Contact */
+    .contact-section {
+      padding: 0 50px;
+      margin-bottom: 100px;
+    }
+    
+    .contact-section h2 {
+      font-size: 35px;
+    }
+    
+    .contact-section .group {
+      display: flex;
+      gap: 50px;
+    }
+    
+    .contact-section .group .text {
+      flex: 3;
+      margin-top: 20px;
+    }
+    
+    .contact-section .group form {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact-section .group form input,
+    .contact-section .group form textarea {
+      font-family: 'Poppins', sans-serif;
+      border: 2px solid var(--link-color);
+      background-color: transparent;
+      padding: 10px;
+      margin-bottom: 15px;
+      outline: none;
+      resize: none;
+    }
+    
+    .contact-section .group form button {
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: var(--link-color);
+      border: none;
+      height: 50px;
+      cursor: pointer;
+      transition: .1s;
+    }
+    
+    .contact-section .group form button:hover {
+      filter: brightness(.9);
+    }
+    
+    @media (max-width: 850px) {
+      /* SECTION 1: Hero */
+      .hero-section .text h2 {
+        font-size: 35px;
+      }
+    }
+    
+    @media (max-width: 740px) {
+      /* SECTION 1: Hero */
+      .hero-section {
+        flex-direction: column-reverse;
+      }
+    
+      .hero-section .headshot img {
+        width: 300px;
+      }
+    
+      /* SECTION 3: Testimony */
+      .testimony-section {
+        text-align: center;
+      }
+    
+      .testimony-section .group {
+        flex-direction: column;
+      }
+    
+      /* SECTION 4: Contact */
+      .contact-section .group {
+        flex-direction: column;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      /* NAVBAR */
+      nav {
+        padding: 0 20px;
+      }
+    
+      nav .right a {
+        font-size: 22px;
+      }
+    
+      nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+      }
+    
+      nav .right a span {
+        display: none;
+      }
+    
+      /* SECTION 1: Hero */
+      .hero-section {
+        padding: 0 20px;
+      }
+    
+      .hero-section .text h2 {
+        font-size: 30px;
+      }
+    
+      /* SECTION 2: Skills */
+      .skills-section {
+        padding: 0 20px;
+      }
+    
+      .skills-section .cells .cell span {
+        font-size: 16px;
+      }
+    
+      /* SECTION 3: Testimony */
+      .testimony-section {
+        padding: 0 20px;
+      }
+    
+      /* SECTION 4: Contact */
+      .contact-section {
+        padding: 0 20px;
+      }
+    }
+    

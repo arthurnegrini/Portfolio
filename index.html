@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Arthur Negrini</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Arthur Negrini</a>
+    </div>
+
+    <div class="right">
+      <a href="section hero/Arthur_NEGRINI_CV_EN.pdf" download>
+          <i class="fa-solid fa-download"></i>
+          <span>CV</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/arthur-negrini-868236257/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:negriniarthur@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+      <img src="section hero/icons8-france-96.png" id="fr-toggle" class = "flag"   style="cursor: pointer; width: 30px;">
+      <img src="section hero/icons8-great-britain-96.png" id="en-toggle" class = "flag"  style="cursor: pointer; width: 30px;">
+      <img src="section hero/icons8-spain-96.png" id="es-toggle" class = "flag" style="cursor: pointer; width: 30px;">
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2 data-fr="Salut, je suis Arthur 👋" data-en="Hi, I'm Arthur 👋" data-es="Hola, soy Arthur 👋">Salut, je suis Arthur 👋</h2>
+        <p data-fr="Je suis étudiant ingénieur à Paris, passionné par la technologie et l'automatisation. Je souhaite mettre à profit mes compétences en intelligence artificielle pour aider les clients et entreprises à automatiser leurs processus, améliorant ainsi leur efficacité et productivité." data-en="I'm an engineering student in Paris, passionate about technology and automation. I aim to leverage my skills in artificial intelligence to help clients and companies automate their processes, improving their efficiency and productivity." data-es="Soy un estudiante de ingeniería en París, apasionado por la tecnología y la automatización. Mi objetivo es aprovechar mis habilidades en inteligencia artificial para ayudar a los clientes y empresas a automatizar sus procesos, mejorando así su eficiencia y productividad.">Je suis étudiant ingénieur à Paris, passionné par la technologie et l'automatisation. Je souhaite mettre à profit mes compétences en intelligence artificielle pour aider les clients et entreprises à automatiser leurs processus, améliorant ainsi leur efficacité et productivité.</p>
+
+        <div class="links">
+          <a href="#propos">
+            <i class="fa-solid fa-code"></i>
+            <span data-fr="A propos" data-en="About" data-es="Acerca de">A propos</span>
+          </a>
+          
+          <a href="#projets">
+            <i class="fa-solid fa-pen"></i>
+            <span data-fr="Projets" data-en="Projects" data-es="Proyectos">Projets</span>
+          </a>
+    
+          <a href="#competences">
+            <i class="fa-solid fa-pen"></i>
+            <span data-fr="Compétences" data-en="Skills" data-es="Habilidades">Compétences</span>
+          </a>
+          
+        </div>
+      </div>
+    
+
+      <div class="headshot">
+        <img src="section hero/photo_CV_6.jpg" alt="arthur negrini headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: A propos -->
+<section id="propos" class="propos-section">
+  <h2 data-fr="A propos" data-en="About" data-es="Acerca de">A propos</h2>
+  <div class="text" data-fr="Dans cette rubrique, je vous invite à découvrir les étapes de mon parcours ainsi que mes différents centres d'intérêt." data-en="In this section, I invite you to discover the stages of my journey as well as my various interests." data-es="En esta sección, te invito a descubrir las etapas de mi viaje y mis diversos intereses.">Dans cette rubrique, je vous invite à découvrir les étapes de mon parcours ainsi que mes différents centres d'intérêt.</div>
+  <div class="buttons">
+    <button id="parcoursButton" data-fr="Parcours" data-en="Journey" data-es="Trayectoria">Parcours</button>
+    <button id="interetsButton" data-fr="Intérêts" data-en="Interests" data-es="Intereses">Intérêts</button>
+  </div>
+  <div id="content" class="content">
+    <!-- Parcours Content -->
+    <div id="parcoursContent" class="content-section">
+      <div class="square" data-text="Classes préparatoires aux Grandes Écoles MPSI-MP (2020-2022)" >
+        <img src="section a propos/photo CPGE.webp" alt="A">
+      </div>    
+      <div class="square" data-text="Cycle ingénieur ESILV Paris La Défense, majeure Santé Biotech. Ecole d'ingénieur spécialisée dans le numérique (2022-2025)">
+        <img src="section a propos/photo_ingénieur.jpg" alt="A">
+      </div>
+      <div class="square" data-text="Stagiaire ingénieur IT chez Ex Venture Indonésie (2024)">
+        <img src="section a propos/Logo_EX Venture white _ tagline.jpg" alt="A">
+      </div>
+      <div class="square" data-text="Mission d'automatisation pour Zero-X, une entreprise Tech (2024)" >
+        <img src="section projets/ZeroX_logo_main bg logo.png" alt="D">
+      </div>
+    </div>
+    
+    <!-- Intérêts Content -->
+    <section id="interetsContent" class="content-section">
+      <div class="interest-item">
+        <div class="circular" data-text="Passionné de handball depuis plus de 12 ans, j’ai joué à un haut niveau, notamment en championnat de France -18 et en FFSU avec plusieurs titres de champion d'Île-de-France et de France.">
+          <img src="section a propos/Design sans titre (1).png" alt="1">
+        </div>
+        <h3 data-fr="SPORT" data-en="SPORT" data-es="DEPORTE">Sport</h3>
+      </div>
+    
+      <div class="interest-item">
+        <div class="circular" data-text="J’ai exploré plus de 20 pays, notamment lors de séjours d'immersion à New York et Londres, ainsi que 5 mois en Indonésie pour mon stage">
+          <img src="section a propos/Design sans titre (3).png" alt="2">
+        </div>
+        <h4 data-fr="VOYAGES" data-en="TRAVEL" data-es="VIAJES">Voyages</h4>
+      </div>
+    
+      <div class="interest-item">
+        <div class="circular" data-text="J'aime découvrir de nouvelles choses, comme la fois où j’ai donné ma première conférence sur l'IA en anglais pendant mon stage en Indonésie.">
+          <img src="section a propos/photo_conf_3.jpg" alt="3">
+        </div>
+        <h5 data-fr="APPRENTISSAGE" data-en="LEARNING" data-es="APRENDIZAJE">Apprentissage</h5>
+      </div>
+    </section>
+    
+
+
+          
+
+   <!-- SECTION 3: Projets -->
+   
+<section id="projets" class="projets-section">
+  <h2 data-fr="Projets" data-en="Projects" data-es="Proyectos">Projets</h2>
+  <div class="text">
+    <h3 data-fr="Voici quelques-uns des projets sur lesquels j'ai travaillé." data-en="Here are some of the projects I have worked on." data-es="Estos son algunos de los proyectos en los que he trabajado.">Voici quelques-uns des projets sur lesquels j'ai travaillé.</h3>
+  </div>
+  <div class="carousel">
+    <div class="carousel-item ">
+      <img src="section projets/ZeroX_logo_main bg logo.png" alt="Project 1" class="img1">
+      <div class="description">
+        <h3 data-fr="Chatbot et Automatisation : Boostez la Productivité d'une Startup " data-en="Chatbot and Automation: Boost the Productivity of a Startup" data-es="Chatbot y Automatización: Impulse la Productividad de una Startup">Chatbot et Automatisation : Boostez la Productivité d'une Startup Cleantech</h3>
+        <p data-fr="J'ai conçu un assistant virtuel avec VoiceFlow pour la startup allemande Zero-X, qui fabrique des machines capables de transformer tout type de déchets en gaz, utilisées partout dans le monde. J'ai intégré l'ensemble des données de la startup dans une base de données disponible sur le site officiel de Zero-X. L'assistant a été créé pour répondre automatiquement aux nombreuses questions complexes posées par les clients et les investisseurs. J'y ai inclus une automatisation pour qu'il fonctionne de manière totalement indépendante, ce qui permet à la startup de réaliser d'importants gains de temps et d'argent. En parallèle, j'ai travaillé sur un assistant virtuel intelligent en utilisant du machine learning." data-en="I created a virtual assistant using VoiceFlow for the German startup Zero-X, a company that manufactures machines transforming all types of waste into gas, used worldwide. I integrated all of the startup's data into a database accessible on the official Zero-X website. The assistant was designed to automatically respond to the many complex questions asked by both clients and investors. I also included automation to make it operate fully independently, leading to significant time and cost savings for the startup. Additionally, I worked on an intelligent virtual assistant, using machine learning to further enhance its capabilities." data-es="Creé un asistente virtual utilizando VoiceFlow para la startup alemana Zero-X, una empresa que fabrica máquinas capaces de transformar cualquier tipo de desechos en gas, utilizadas en todo el mundo. Integré todos los datos de la startup en una base de datos disponible en el sitio web oficial de Zero-X. El asistente fue diseñado para responder automáticamente a las muchas preguntas complejas planteadas por los clientes e inversores. También incluí una automatización para que funcione de manera completamente independiente, lo que conlleva un importante ahorro de tiempo y dinero para la startup. Además, trabajé en un asistente virtual inteligente utilizando machine learning.">J'ai conçu un assistant virtuel avec VoiceFlow pour la startup allemande Zero-X, qui fabrique des machines capables de transformer tout type de déchets en gaz, utilisées partout dans le monde...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="section a propos/Logo_EX Venture white _ tagline.jpg" alt="Project 2" class="img2">
+      <div class="description">
+        <h3 data-fr="Automatisation des Processus chez Ex Venture" data-en="Process Automation at Ex Venture" data-es="Automatización de Procesos en Ex Venture">Automatisation des Processus chez Ex Venture</h3>
+        <p data-fr="J'ai mis en place une automatisation complexe lors de mon stage de 5 mois en Indonésie avec Ex Venture, utilisant plusieurs outils connectés pour créer un processus entièrement automatisé. La première étape a consisté à centraliser les informations des investisseurs en ajoutant automatiquement des lignes dans Google Sheets grâce à Zapier. Ensuite, j'ai configuré Gmail pour envoyer directement les réponses du chatbot aux investisseurs, optimisant ainsi la communication. J'ai aussi intégré une fonction pour ajouter les clients intéressés à une liste Vbout pour la newsletter. Cette automatisation a réduit les coûts et amélioré la précision des communications. La gestion des campagnes via Vbout a permis des analyses en temps réel." data-en="During my 5-month internship in Indonesia with Ex Venture, I implemented a complex automation using various interconnected tools to create a fully automated process. The first task involved centralizing investor information by automatically adding rows to Google Sheets with Zapier. Next, I set up Gmail to directly send chatbot responses to investors, streamlining communication. I also integrated a feature to automatically add interested clients to a Vbout newsletter list. This automation reduced costs and improved communication accuracy. Vbout's campaign management provided real-time analytics." data-es="Durante mi pasantía de 5 meses en Indonesia con Ex Venture, implementé una automatización compleja utilizando varias herramientas interconectadas para crear un proceso completamente automatizado. La primera tarea consistió en centralizar la información de los inversores añadiendo automáticamente filas en Google Sheets mediante Zapier. Luego, configuré Gmail para enviar directamente las respuestas del chatbot a los inversores, optimizando la comunicación. También integré una función para añadir automáticamente a los clientes interesados a una lista de boletín en Vbout. Esta automatización redujo costos y mejoró la precisión de las comunicaciones. La gestión de campañas en Vbout permitió análisis en tiempo real.">J'ai mis en place une automatisation complexe lors de mon stage de 5 mois en Indonésie avec Ex Venture, utilisant plusieurs outils connectés pour créer un processus entièrement automatisé. La première étape a consisté à centraliser les informations des investisseurs en ajoutant automatiquement des lignes dans Google Sheets grâce à Zapier. Ensuite, j'ai configuré Gmail pour envoyer directement les réponses du chatbot aux investisseurs, optimisant ainsi la communication. J'ai aussi intégré une fonction pour ajouter les clients intéressés à une liste Vbout pour la newsletter. Cette automatisation a réduit les coûts et amélioré la précision des communications. La gestion des campagnes via Vbout a permis des analyses en temps réel.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="section projets/tictactoe2.jpg" alt="Project 3" class="img3">
+      <div class="description">
+        <h3 data-fr="Ultimate Tic Tac Toe : AI Battle" data-en="Ultimate Tic Tac Toe: AI Battle" data-es="Ultimate Tic Tac Toe: Batalla de IA">Ultimate Tic Tac Toe : AI Battle</h3>
+        <p data-fr="Il s'agit d'une variante combinatoire du célèbre jeu de Tic-Tac-Toe, avec un mode de jeu comportant des affrontements entre des joueurs humains et des IA basées sur l'algorithme Minimax avec élagage Alpha-Beta. Les règles du jeu comprennent un plateau de 3x3 avec la condition que le choix de la grille du joueur suivant dépende de la dernière position du joueur précédent. L'IA prend des décisions dynamiques sans utiliser de listes de mouvements prédéfinies en moins de 10 secondes afin de maintenir une expérience de jeu fluide. La mise en œuvre offre également la possibilité de faire s'affronter deux IA, deux humains ou un humain contre une IA." data-en="This is a combinatorial variant of the famous Tic-Tac-Toe game, with a game mode featuring battles between human players and AI based on the Minimax algorithm with Alpha-Beta pruning. The game rules include a 3x3 board with the condition that the choice of the next player's grid depends on the last position of the previous player. The AI makes dynamic decisions without using predefined move lists in less than 10 seconds to maintain a smooth gaming experience. The implementation also offers the possibility for two AIs, two humans, or a human against an AI to compete." data-es="Esta es una variante combinatoria del famoso juego de Tic-Tac-Toe, con un modo de juego que presenta batallas entre jugadores humanos y IA basadas en el algoritmo Minimax con poda Alfa-Beta. Las reglas del juego incluyen un tablero de 3x3 con la condición de que la elección de la cuadrícula del siguiente jugador dependa de la última posición del jugador anterior. La IA toma decisiones dinámicas sin usar listas de movimientos predefinidas en menos de 10 segundos para mantener una experiencia de juego fluida. La implementación también ofrece la posibilidad de que dos IAs, dos humanos o un humano contra una IA compitan.">Il s'agit d'une variante combinatoire du célèbre jeu de Tic-Tac-Toe, avec un mode de jeu comportant des affrontements entre des joueurs humains et des IA basées sur l'algorithme Minimax avec élagage Alpha-Beta. Les règles du jeu comprennent un plateau de 3x3 avec la condition que le choix de la grille du joueur suivant dépende de la dernière position du joueur précédent. L'IA prend des décisions dynamiques sans utiliser de listes de mouvements prédéfinies en moins de 10 secondes afin de maintenir une expérience de jeu fluide. La mise en œuvre offre également la possibilité de faire s'affronter deux IA, deux humains ou un humain contre une IA.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="section projets/logo Blue green.png" alt="Blue Green" class="img4">
+      <div class="description">
+        <h3 data-fr="Blue Green : l'arroseur 100% autonome" data-en="Blue Green: the 100% autonomous sprinkler" data-es="Blue Green: el rociador 100% autónomo">Blue Green : l'arroseur 100% autonome</h3>
+        <p data-fr="Blue Green est un prototype d'arroseur automatique que j'ai créé avec mes camarades d'école lors de notre troisième année à l'ESILV Paris. Le système utilise une carte Arduino pour gérer l'irrigation de manière intelligente et autonome. Les capteurs d'humidité intégrés dans le sol déterminent les besoins en eau des plantes et ajustent l'arrosage en conséquence. L'IA prend des décisions dynamiques en temps réel sans séquences prédéfinies, assurant une réponse optimale en moins de 10 secondes pour une expérience fluide. Blue Green offre plusieurs modes : automatique, semi-automatique avec intervention manuelle, ou manuel pour un contrôle total." data-en="Blue Green is an automatic sprinkler prototype that I created with my schoolmates during our third year at ESILV Paris. The system uses an Arduino board to manage irrigation intelligently and autonomously. Moisture sensors integrated into the soil determine the water needs of the plants and adjust the irrigation accordingly. The AI makes dynamic decisions in real-time without predefined sequences, ensuring an optimal response in less than 10 seconds for a smooth experience. Blue Green offers several modes: automatic, semi-automatic with manual intervention, or manual for full control." data-es="Blue Green es un prototipo de rociador automático que creé con mis compañeros de escuela durante nuestro tercer año en ESILV París. El sistema utiliza una placa Arduino para gestionar el riego de manera inteligente y autónoma. Los sensores de humedad integrados en el suelo determinan las necesidades de agua de las plantas y ajustan el riego en consecuencia. La IA toma decisiones dinámicas en tiempo real sin secuencias predefinidas, asegurando una respuesta óptima en menos de 10 segundos para una experiencia fluida. Blue Green ofrece varios modos: automático, semiautomático con intervención manual o manual para control total.">Blue Green est un prototype d'arroseur automatique que j'ai créé avec mes camarades d'école lors de notre troisième année à l'ESILV Paris. Le système utilise une carte Arduino pour gérer l'irrigation de manière intelligente et autonome. Les capteurs d'humidité intégrés dans le sol déterminent les besoins en eau des plantes et ajustent l'arrosage en conséquence. L'IA prend des décisions dynamiques en temps réel sans séquences prédéfinies, assurant une réponse optimale en moins de 10 secondes pour une expérience fluide. Blue Green offre plusieurs modes : automatique, semi-automatique avec intervention manuelle, ou manuel pour un contrôle total.</p>
+      </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</section>
+
+
+<!-- SECTION 3: Compétences -->
+
+<section id="competences" class="competences-section">
+  <h2 data-fr="Compétences" data-en="Skills" data-es="Habilidades">Compétences</h2>
+  <div class="text">
+  </div>
+
+  <div class="group">
+    <!-- Première ligne de 5 logos -->
+    <div class="row">
+      <div class="cell">
+        <img src="section competences/icons8-html-logo-144.png" alt="html logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-css-logo-144.png" alt="css logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-javascript-144.png" alt="javascript logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-python-144.png" alt="Python logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-mysql-logo-150.png" alt="My SQL Logo">
+      </div>
+    </div>
+
+    <!-- Deuxième ligne de 6 logos -->
+    <div class="row">
+      <div class="cell">
+        <img src="section competences/icons8-c-sharp-logo-128.png" alt="C#">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-windows8-144.png" alt="Windows">
+      </div>
+      <div class="cell">
+        <img src="section competences/icons8-rstudio-144.png" alt="RStudio-Logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/zapier logo.jpeg" alt="Zapier-Logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/idqMetg2NR_1717563202438.jpeg" alt="Voiceflow-Logo">
+      </div>
+      <div class="cell">
+        <img src="section competences/idzOgyZn5I_1717568456259.jpeg" alt="Vbout-Logo">
+      </div>
+    </div>
+  </div>
+</section>    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
